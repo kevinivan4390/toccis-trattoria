@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tocci's Pizzeria | Blog</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="body-bg-tocci blog-page">
+    <!-- Navbar (consistente con las otras páginas) -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="imagenes/tocci.png" alt="Tocci's Pizzeria" height="110"> 
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pizzas.html">Pizzas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (imagen de fondo opcional) -->
+    <header class="hero-section-small bg-dark text-white">
+        <div class="container h-100 d-flex align-items-center">
+            <div class="hero-text text-center">
+                <h1 class="display-4 fw-bold">Nuestra Historia</h1>
+                <p class="lead">Tradición, pasión y el mejor sabor italiano</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Historia de la Pizzería -->
+    <section class="py-5">
+        <div class="container container-custom">
+            <h2 class="text-center mb-4 text-tocci-light">¿Cómo nació Toccis Trattoria?</h2>
+            <div class="row align-items-center"> <!-- row con alineación vertical -->
+                <!-- Columna para la imagen -->
+                <div class="col-md-6 mb-4 mb-md-0"> <!-- mb-4: margen inferior en móviles -->
+                    <img src="imagenes/principal.png" alt="Fundadores de Tocci's" class="img-fluid rounded">
+                </div>
+                <!-- Columna para el texto -->
+                <div class="col-md-6">
+                    <p>En el corazón de Rosario, en 1985, los hermanos <strong>Marco y Gianna Tocci</strong> llegaron desde Nápoles con una maleta llena de recetas familiares y un sueño: compartir la auténtica pizza italiana con Argentina.</p>
+                    <p>Empezaron en un pequeño local en Calle Falsa 123, donde amasaban la masa cada mañana con técnicas centenarias. Su secreto: <span class="text-danger">massa fermentata</span> (masa fermentada por 72 horas) y tomates San Marzano importados de Italia.</p>
+                    <blockquote class="blockquote my-4 p-3 green-light border-start border-danger border-4">
+                        <p>"La pizza no es solo comida, es amor en forma circular."</p>
+                        <footer class="blockquote-footer">Gianna Tocci, 1990</footer>
+                    </blockquote>
+                    <p>En 2020, <strong>Kevin Gamboa</strong>, nieto de Gianna, modernizó el local con hornos de leña digitales pero manteniendo la esencia familiar. Hoy, Tocci's es un ícono de Rosario, premiada por la <em>Asociación de Pizzerías Argentinas</em>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+   
+<!--    <section class="py-5">
+             
+            <h3 class="text-center mb-4">Descubre más</h3>
+            <div class="row g-4">
+                
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm blog-card">
+                        <img src="imagenes/ingredientes.jpg" class="card-img-top" alt="Ingredientes frescos">
+                        <div class="card-body">
+                            <h5 class="card-title">Nuestros Ingredientes Secretos</h5>
+                            <p class="card-text">Cómo seleccionamos los mejores productos locales e importados.</p>
+                            <a href="#" class="btn btn-outline-danger">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm blog-card">
+                        <img src="imagenes/horno.jpg" class="card-img-top" alt="Horno de leña">
+                        <div class="card-body">
+                            <h5 class="card-title">El Arte del Horno de Leña</h5>
+                            <p class="card-text">La ciencia detrás de los 400°C que hacen nuestra pizza única.</p>
+                            <a href="#" class="btn btn-outline-danger">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                 
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm blog-card">
+                        <img src="imagenes/eventos.jpg" class="card-img-top" alt="Eventos">
+                        <div class="card-body">
+                            <h5 class="card-title">Noches de Pizza y Vino</h5>
+                            <p class="card-text">Eventos mensuales con bodegas locales. ¡Próxima fecha 15/10!</p>
+                            <a href="#" class="btn btn-outline-danger">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  
+    
+-->
+
+
+    <!-- Footer (igual que las otras páginas) -->
+    <footer class="bg-dark py-5 position-relative"> <!-- Añade position-relative y más padding (py-5) -->
+        <!-- Marca de agua -->
+        <div class="footer-watermark">
+            Tocci's Trattoria ®
+        </div>
+        
+        <!-- Contenido original (ahora con z-index para estar arriba) -->
+        <div class="container position-relative" style="z-index: 2;">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 - Desarrollado por kevininvan4390@gmail.com</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="https://www.instagram.com/tocci.s_/" class="text-white mx-2"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="https://wa.me/3435188936" class="text-white mx-2"><i class="fab fa-whatsapp fa-lg"></i></a>
+                    <a href="#" class="text-white mx-2"><i class="fab fa-facebook fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS Personalizado -->
+    <script src="js/main.js"></script>
+</body>
+</html>
