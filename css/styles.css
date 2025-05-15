@@ -1,0 +1,484 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 80px !important; /* Ajuste clave */
+    background-color: #133600;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Hero Section (Imagen principal) */
+.hero-section {
+    background: url('../imagenes/tocci.png') no-repeat center center;
+    background-size: 28%;
+    height: 60vh;
+    position: relative;
+    margin-top: 0; /* Eliminamos el margen superior anterior */
+}
+
+/* ===== IMAGEN MÁS GRANDE SOLO EN MÓVILES ===== */
+@media (max-width: 768px) {  /* Afecta solo móviles */
+    .hero-section {
+      background: url('../imagenes/tocci.png') no-repeat center center/cover !important;
+      height: 75vh !important;  /* Altura aumentada (ajusta el valor) */
+      background-size: 100% auto !important;  /* Agranda la imagen (150% del ancho) */
+      background-position: center 40% !important;  /* Ajusta la posición vertical */
+    }
+  }
+
+
+/* Overlay del hero */
+.hero-section::before {
+    content: ''; /* Contenido pseudo-elemento */
+    position: absolute; /* Posicionamiento absoluto */
+    top: 0; /* Posición desde arriba */
+    left: 0; /* Posición desde izquierda */
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    background: rgba(0, 0, 0, 0.267); /* Color de overlay con transparencia */
+}
+
+/* Texto del hero */
+.hero-text {
+    position: relative; /* Posicionamiento relativo */
+    z-index: 1; /* Nivel de apilamiento */
+    animation: fadeIn 1.5s ease-in-out; /* Animación de entrada */
+}
+
+/* Animación fadeIn */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); } /* Estado inicial */
+    to { opacity: 1; transform: translateY(0); } /* Estado final */
+}
+
+/* Estilos de botones peligrosos */
+.btn-danger {
+    background-color: #be2828; /* Color de fondo */
+    border: none; /* Sin borde */
+    transition: all 0.3s; /* Transición suave */
+}
+
+/* Hover de botones peligrosos */
+.btn-danger:hover {
+    background-color: #2a5312; /* Color de fondo al pasar mouse */
+    transform: scale(1.05); /* Efecto de escala */
+}
+
+/* Estilos de navbar */
+.navbar {
+    box-shadow: 0 2px 10px rgba(79, 104, 10, 0.1); /* Sombra */
+}
+
+/* Estilos de links de navbar */
+.nav-link {
+    font-weight: 500; /* Grosor de fuente */
+    transition: color 0.3s; /* Transición de color */
+}
+
+/* Hover de links de navbar */
+.nav-link:hover {
+    color: #ddbc36 !important; /* Color al pasar mouse */
+}
+
+/* Estilos de links en footer */
+footer a {
+    transition: color 0.3s; /* Transición de color */
+}
+
+/* Hover de links en footer */
+footer a:hover {
+    color: #dc3545 !important; /* Color al pasar mouse */
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 50vh; /* Altura reducida en móviles */
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem; /* Tamaño de fuente reducido */
+    }
+
+    .navbar-brand img {
+        height: 30px; /* Altura de logo reducida */
+    }
+}
+
+/* Estilos para contacto.html - Hero section */
+.hero-section-small {
+    height: 40vh; /* Altura reducida */
+    background: url('../imagenes/contacto-bg.jpg') no-repeat center center; /* Imagen de fondo */
+    background-size: cover; /* Ajuste de imagen */
+    margin-top: 56px; /* Margen superior */
+}
+
+/* Estilos de formulario de contacto */
+#contact-form .form-control {
+    border: 1px solid #ddd; /* Borde */
+    transition: all 0.3s; /* Transición */
+}
+
+/* Focus en inputs de formulario */
+#contact-form .form-control:focus {
+    border-color: #dc3545; /* Color de borde */
+    box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25); /* Sombra */
+}
+
+/* Mensajes de error en formulario */
+.invalid-feedback {
+    color: #dc3545; /* Color rojo */
+    font-size: 0.875em; /* Tamaño de fuente */
+}
+
+/* Inputs inválidos */
+.is-invalid {
+    border-color: #dc3545 !important; /* Borde rojo */
+}
+
+/* Alertas de éxito */
+.alert-success {
+    background-color: #d4edda; /* Fondo verde claro */
+    color: #155724; /* Texto verde oscuro */
+    border: 1px solid #c3e6cb; /* Borde verde */
+}
+
+/* Estilos para blog - Posts */
+.blog-post {
+    transition: transform 0.3s, box-shadow 0.3s; /* Transiciones */
+}
+
+/* Hover en posts de blog */
+.blog-post:hover {
+    transform: translateY(-5px); /* Movimiento hacia arriba */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important; /* Sombra */
+}
+
+/* Cards de blog */
+.blog-card {
+    transition: all 0.3s; /* Transición completa */
+}
+
+/* Hover en cards de blog */
+.blog-card:hover {
+    transform: scale(1.03); /* Escala */
+    box-shadow: 0 5px 15px rgba(220, 53, 69, 0.3) !important; /* Sombra roja */
+}
+
+/* Imágenes de artículos */
+.card-img-top {
+    height: 200px; /* Altura fija */
+    object-fit: cover; /* Ajuste de imagen */
+}
+
+/* Sobrescritura de navbar personalizada */
+.navbar-custom {
+    background-color: rgb(6, 43, 41) !important; /* Color de fondo */
+    box-shadow: 0 4px 12px rgba(6, 43, 41, 0.3); /* Sombra */
+}
+
+/* Estilos de brand y links en navbar custom */
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: white !important; /* Color blanco */
+}
+
+/* Hover en links de navbar custom */
+.navbar-custom .nav-link:hover {
+    color: #deb621 !important; /* Color dorado */
+}
+
+/* Estilo para sección de bienvenida */
+.bg-tocci-dark {
+    background-color: #062b29; /* Fondo oscuro */
+    color: #deb621; /* Texto dorado */
+}
+
+/* Párrafos en sección de bienvenida */
+.bg-tocci-dark .lead {
+    color: #f8f8f8; /* Texto claro */
+}
+
+
+/* Duplicado de estilos de brand y links */
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: white !important;
+}
+
+/* Duplicado de hover en links */
+.navbar-custom .nav-link:hover {
+    color: #deb621 !important;
+}
+
+/* Fondo general para páginas */
+.body-bg-tocci {
+    background-color: #062b29; /* Fondo oscuro */
+    color: #deb621; /* Texto dorado */
+}
+
+/* Contenedores personalizados */
+.container-custom {
+    margin-top: 2rem; /* Espacio seguro debajo de la navbar */
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Texto claro */
+.text-tocci-light {
+    color: #f8f8f8 !important; /* Color claro */
+}
+
+
+/* NAVBAR CENTRADO - VERSIÓN MEJORADA */
+.navbar-custom .navbar-nav {
+    display: flex;
+    justify-content: center;
+    margin-left: 20%; /* Margen izquierdo personalizable */
+    margin-right: 35%; /* Margen derecho personalizable */
+    gap: 3rem;
+}
+
+.navbar-custom .nav-link {
+    font-size: 1.5rem; /* Tamaño aumentado */
+    font-weight: 600; /* Grosor de fuente */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    position: relative;
+}
+
+/* Efecto hover mejorado */
+.navbar-custom .nav-link:hover {
+    transform: translateY(-2px); /* Levanta ligeramente */
+}
+
+/* Responsive para móviles */
+@media (max-width: 992px) {
+    .navbar-custom .navbar-nav {
+        gap: 1.5rem; /* Reduce espacio en móviles */
+        flex-direction: column; /* Apila verticalmente */
+        padding: 1rem 0;
+    }
+    
+    .navbar-custom .nav-link {
+        font-size: 1.1rem; /* Tamaño ligeramente menor */
+    }
+}
+
+.bg-dark {
+    background-color: #022423ea !important;
+    /* Opcional: añade esto si quieres sobreescribir en todos los footers */
+}
+
+/* BOTÓN FLOTANTE DEL CARRITO - VERSIÓN MEJORADA */
+.btn-carrito-flotante {
+    position: fixed;
+    bottom: 300px; /* Ajusta la distancia desde abajo */
+    right: 40px; /* Ajusta la distancia desde la derecha */
+    z-index: 1000;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #be2828; /* Color del botón */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+    border: 2px solid white; /* Borde blanco */
+    animation: pulse 2s infinite; /* Animación de pulso */
+}
+
+.btn-carrito-flotante:hover {
+    transform: scale(1.1) translateY(-5px);
+    background-color: #dc3545; /* Color al hacer hover */
+}
+
+/* Ajuste para móviles */
+@media (max-width: 768px) {
+    .btn-carrito-flotante {
+        bottom: 15px;
+        right: 15px;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(220, 53, 69, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(220, 53, 69, 0); }
+}
+
+.bg-tocci-light {
+    background-color: #173634; /* O el valor más claro que prefieras */
+}
+
+/* Elimina márgenes/paddings no deseados */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Asegura que el body ocupe todo el espacio */
+body {
+    background-color: #062b29; /* Color oscuro de tu diseño */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Hero Section: ajusta la altura si es necesario */
+.hero-section {
+    height: 70vh;
+    margin-top: 56px; /* Compensa la navbar fija */
+}
+
+/* Footer: asegura que no haya espacios */
+footer {
+    width: 100%;
+    /*color:rgba(82, 80, 80, 0.815) !important;*/
+}
+
+/* Borde amarillo para el logo en la navbar */
+.navbar-brand img {
+    border: 1px solid #1d1b14; /* Borde amarillo (#deb621 es el color dorado de tu diseño) */
+    border-radius: 8px; /* Bordes redondeados (opcional) */
+    padding: 5px; /* Espacio interno entre el logo y el borde (opcional) */
+    box-shadow: 0 0 6px rgba(222, 182, 33, 0.5); /* Sombra dorada (opcional) */
+    transition: all 0.3s ease; /* Efecto suave al pasar el mouse */
+}
+
+/* Efecto hover (opcional) */
+.navbar-brand img:hover {
+    border-color: #ffc107; /* Cambia el color del borde al pasar el mouse */
+    transform: scale(1.05); /* Escala ligeramente el logo */
+}
+
+/* Estilos específicos para el footer */
+.custom-footer {
+    color: #52525236 !important; /* Color texto principal */
+}
+
+.footer-text {
+    color: inherit !important; /* Hereda el color del padre */
+}
+
+.footer-icon {
+    color: #deb621 !important; /* Dorado */
+    margin: 0 8px;
+}
+
+.footer-icon:hover {
+    color: #ffc107 !important; /* Amarillo hover */
+}
+
+/* Texto estilo marca de agua */
+.footer-watermark {
+    color: rgba(255, 255, 255, 0.2) !important; /* Blanco al 20% de opacidad */
+    font-size: 1.5rem; /* Tamaño grande */
+    font-weight: 300; /* Texto fino */
+    text-align: center;
+    position: absolute; /* Posicionamiento absoluto */
+    left: 0;
+    right: 0;
+    top: 50%; /* Centrado vertical */
+    transform: translateY(-50%); /* Ajuste fino del centrado */
+    z-index: 1; /* Capa detrás del contenido */
+    pointer-events: none; /* Permite hacer clic en lo que está detrás */
+}
+
+/* Estilo marca de agua para TODO el texto del footer */
+footer.bg-dark,
+footer.bg-dark p,
+footer.bg-dark .text-center,
+footer.bg-dark .text-md-start,
+footer.bg-dark .text-md-end:not(a) {  /* Excluye íconos (<a>) */
+    color: rgba(255, 255, 255, 0.2) !important; /* Blanco al 20% de opacidad */
+    font-weight: 300; /* Texto fino */
+}
+
+/* Mantener íconos visibles */
+footer.bg-dark a,
+footer.bg-dark a:hover {
+    color: #ffffff !important; /* Blanco sólido para íconos */
+    opacity: 1 !important; /* Máxima visibilidad */
+}
+
+/* Ajuste de posición vertical */
+footer.bg-dark {
+    position: relative;
+    padding-top: 3rem; /* Espacio superior para mejor centrado */
+    padding-bottom: 3rem;
+}
+
+/* ===== FOOTER RESPONSIVE (MÓVILES) ===== */
+
+
+  @media (max-width: 768px) {
+    /* Estructura principal */
+    footer .row {
+      display: flex !important;
+      flex-direction: column !important; /* Apila verticalmente */
+      gap: 40px !important;
+    }
+  
+    /* Contenedor de íconos - POSICIONADO ARRIBA */
+    footer .col-md-6.text-center.text-md-end {
+      order: -1 !important; /* Mueve este contenedor al principio */
+      margin-bottom: 15px !important; /* Espacio debajo de íconos */
+    }
+  
+    /* Estilo para los íconos */
+    footer .text-md-end {
+      display: flex !important;
+      justify-content: center !important;
+      gap: 25px !important; /* Espacio entre íconos */
+    }
+  
+    /* Texto de copyright */
+    footer .text-md-start {
+      text-align: center !important;
+      padding-top: 10px !important;
+    }
+  
+    /* Ajustes de íconos individuales */
+    footer a {
+      margin: 0 !important;
+      font-size: 1.4rem !important; /* Tamaño aumentado */
+    }
+  }
+
+  @media (max-width: 992px) {  /* Afecta solo tablet/móvil (ajusta el breakpoint si es necesario) */
+    .navbar-brand img {
+      height: 120px !important;  /* Tamaño para móviles (ajusta según necesites) */
+      width: auto !important;   /* Mantiene proporciones */
+      transition: all 0.3s;     /* Efecto suave si cambia de tamaño */
+      margin-top: 10px;
+      margin-left: 20px;
+    }
+  }
+
+  /* ===== TEXTO BLANCO SOLO EN EL BLOG ===== */
+/* Sección principal del blog */
+body.blog-page section.py-5 .container-custom p,
+body.blog-page section.py-5 .container-custom strong,
+body.blog-page section.py-5 .container-custom em,
+body.blog-page section.py-5 .container-custom .blockquote,
+body.blog-page section.py-5 .container-custom .blockquote-footer,
+body.blog-page section.py-5 .text-tocci-light {
+  color: #ffffff !important;
+}
+
+/* Citas en el blog */
+body.blog-page section.py-5 .blockquote {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  border-left-color: #ffffff !important;
+}
+
+  

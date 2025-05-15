@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tocci's Pizzeria | Menú</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="body-bg-tocci">
+    <!-- Navbar (igual que index.html) -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="imagenes/tocci.png" alt="Tocci's Pizzeria" height="110"> 
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="pizzas.html">Pizzas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menú -->
+    <section class="py-5">
+        <div class="container container-custom"> <!-- Añade container-custom -->
+            <h2 class="text-center mb-5 text-tocci-light">Nuestro catálogo (Hacé tu pedido de Martes a Domingos de 17:00 a 23:00 hs)</h2>
+            <div class="row g-4">
+             
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagenes/focacciamelanzana.png" class="card-img-top" alt="Focaccia Di Melanzana">
+                        <div class="card-body">
+                            <h5 class="card-title">Focaccia Di Melanzana</h5>
+                            <p class="card-text">Sandwich de foccacia de masa madre con berenjenas a la parmigiana y mozzarella.</p>
+                            <p class="fw-bold text-danger">$11000</p>
+                            <button class="btn btn-outline-danger add-to-cart" data-name="Focaccia Di Melanzana" data-price="11000">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagenes/focacciaimpanato.png" class="card-img-top" alt="Focaccia Impanato">
+                        <div class="card-body">
+                            <h5 class="card-title">Focaccia Impanato</h5>
+                            <p class="card-text">Sandwich de focaccia de masa madre con milanesa de pollo a la napoletana.</p>
+                            <p class="fw-bold text-danger">$12000</p>
+                            <button class="btn btn-outline-danger add-to-cart" data-name="Focaccia Impanato" data-price="12000">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+          
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagenes/napolitana.png" class="card-img-top" alt="Napolitana">
+                        <div class="card-body">
+                            <h5 class="card-title">Napolitana Tocci's</h5>
+                            <p class="card-text">Pizza de masa madre con mozzarella, tomates frescos, salsa de tomates y aromáticas frescas, aceite de oliva.</p>
+                            <p class="fw-bold text-danger">$12000</p>
+                            <button class="btn btn-outline-danger add-to-cart" data-name="Napolitana Tocci's" data-price="12000">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+             
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagenes/spinaci.png" class="card-img-top" alt="Spinaci">
+                        <div class="card-body">
+                            <h5 class="card-title">Spinaci</h5>
+                            <p class="card-text">Espinaca a la italiana, parmesano, mozzarella y oliva.</p>
+                            <p class="fw-bold text-danger">$15000</p>
+                            <button class="btn btn-outline-danger add-to-cart" data-name="Spinacci" data-price="15000">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagenes/zucchine.png" class="card-img-top" alt="Zucchine">
+                        <div class="card-body">
+                            <h5 class="card-title">Zucchine</h5>
+                            <p class="card-text">Zuquini, cebolla morada, mozzarella, queso azul y nueces.</p></p>
+                            <p class="fw-bold text-danger">$14500</p>
+                            <button class="btn btn-outline-danger add-to-cart" data-name="Zucchine" data-price="14500">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagenes/hongos.png" class="card-img-top" alt="Hongos">
+                        <div class="card-body">
+                            <h5 class="card-title">Hongos</h5>
+                            <p class="card-text">Cebolla caramelizada, hongos, mozzarella.</p>
+                            <p class="fw-bold text-danger">$14500</p>
+                            <button class="btn btn-outline-danger add-to-cart" data-name="Hongos" data-price="14500">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+             
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagenes/quattroformaggi.png" class="card-img-top" alt="quattroformaggi">
+                        <div class="card-body">
+                            <h5 class="card-title">Quattro Formaggi</h5>
+                            <p class="card-text">Salsa de tomate, mozzarella, parmesano, ricota y queso azul.</p>
+                            <p class="fw-bold text-danger">$14000</p>
+                            <button class="btn btn-outline-danger add-to-cart" data-name="Quattro Formaggi" data-price="14000">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+               
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagenes/speciale.png" class="card-img-top" alt="Speciale">
+                        <div class="card-body">
+                            <h5 class="card-title">Speciale</h5>
+                            <p class="card-text">Salsa de tomate, mozzarella, jamón natural.</p>
+                            <p class="fw-bold text-danger">$14000</p>
+                            <button class="btn btn-outline-danger add-to-cart" data-name="Speciale" data-price="14000">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+              
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagenes/margherita.png" class="card-img-top" alt="Margherita">
+                        <div class="card-body">
+                            <h5 class="card-title">Margherita</h5>
+                            <p class="card-text">Salsa de tomate, Mozzarella, salsa de albahaca.</p>
+                            <p class="fw-bold text-danger">$12500</p>
+                            <button class="btn btn-outline-danger add-to-cart" data-name="Pepperoni" data-price="12500">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+               
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagenes/fugazzarosa.png" class="card-img-top" alt="Fugazza Rosa">
+                        <div class="card-body">
+                            <h5 class="card-title">Fugazza Rosa</h5>
+                            <p class="card-text">Cebollas blancas y moradas, parmigiano.</p>
+                            <p class="fw-bold text-danger">$13000</p>
+                            <button class="btn btn-outline-danger add-to-cart" data-name="Fugazza Rosa" data-price="13000">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+              
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagenes/pepperoni.png" class="card-img-top" alt="Pepperoni">
+                        <div class="card-body">
+                            <h5 class="card-title">Pepperoni</h5>
+                            <p class="card-text">Salsa de tomate, mozzarella y pepperoni.</p>
+                            <p class="fw-bold text-danger">$14000</p>
+                            <button class="btn btn-outline-danger add-to-cart" data-name="Pepperoni" data-price="14000">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+             
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagenes/toscana.png" class="card-img-top" alt="Toscana">
+                        <div class="card-body">
+                            <h5 class="card-title">Toscana</h5>
+                            <p class="card-text">Cebolla caramelizada, peras asadas, queso azul y nueces</p>
+                            <p class="fw-bold text-danger">$15000</p>
+                            <button class="btn btn-outline-danger add-to-cart" data-name="Toscana" data-price="15000">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+        
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagenes/paninoripieno.png" class="card-img-top" alt="Panino Ripieno">
+                        <div class="card-body">
+                            <h5 class="card-title">Panino Ripieno</h5>
+                            <p class="card-text">Pan de masa madre, relleno con:
+                                                "Caprese",
+                                                "Jamón y Queso",
+                                                "Queso Y pepperoni",
+                                                "Zuccinis, queso azul y cebolla caramelizada"</p>
+                            <p class="fw-bold text-danger">$10000</p>
+                            <button class="btn btn-outline-danger add-to-cart" data-name="Panino Ripieno" data-price="10000">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+              
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagenes/focacciaquattro.png" class="card-img-top" alt="Focaccia Quattro">
+                        <div class="card-body">
+                            <h5 class="card-title">Focaccia Quattro</h5>
+                            <p class="card-text">Sándwich de focaccia con salame tipo campo, selección de quesos, oliva y verdes.</p>
+                            <p class="fw-bold text-danger">$10000</p>
+                            <button class="btn btn-outline-danger add-to-cart" data-name="Focaccia Quattro" data-price="10000">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagenes/focacciaquattro.png" class="card-img-top" alt="Focaccia Uno">
+                        <div class="card-body">
+                            <h5 class="card-title">Focaccia Uno</h5>
+                            <p class="card-text">Sándwich de focaccia con jamon cocido natural, tomates caracterizados, mozzarella y salsa de albahaca</p>
+                            <p class="fw-bold text-danger">$10000</p>
+                            <button class="btn btn-outline-danger add-to-cart" data-name="Focaccia Uno" data-price="10000">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrito de Compras (Sidebar) -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas">
+        <div class="offcanvas-header bg-dark text-white">
+            <h5 class="offcanvas-title">Tu Pedido</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div id="cart-items" class="mb-3">
+                <!-- Aquí se agregarán los items dinámicamente -->
+            </div>
+            <div class="d-grid gap-2">
+                <button id="checkout-btn" class="btn btn-success">
+                    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón flotante del carrito -->
+    <button class="btn-carrito-flotante" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">0</span>
+    </button>
+
+    <footer class="bg-dark py-5 position-relative"> <!-- Añade position-relative y más padding (py-5) -->
+        <!-- Marca de agua -->
+        <div class="footer-watermark">
+            Tocci's Trattoria ®
+        </div>
+        
+        <!-- Contenido original (ahora con z-index para estar arriba) -->
+        <div class="container position-relative" style="z-index: 2;">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 - Desarrollado por kevininvan4390@gmail.com</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="https://www.instagram.com/tocci.s_/" class="text-white mx-2"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="https://wa.me/3435188936" class="text-white mx-2"><i class="fab fa-whatsapp fa-lg"></i></a>
+                    <a href="#" class="text-white mx-2"><i class="fab fa-facebook fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS y dependencias -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS Personalizado -->
+    <script src="js/main.js"></script>
+</body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const isDesktop = window.innerWidth >= 1024;
+        const carrito = document.querySelector('.btn-carrito-flotante');
+    
+        if (isDesktop && carrito) {
+            carrito.style.position = 'fixed';
+            carrito.style.cursor = 'move';
+    
+            let offsetX, offsetY, dragging = false;
+    
+            carrito.addEventListener('mousedown', (e) => {
+                dragging = true;
+                offsetX = e.clientX - carrito.getBoundingClientRect().left;
+                offsetY = e.clientY - carrito.getBoundingClientRect().top;
+            });
+    
+            document.addEventListener('mousemove', (e) => {
+                if (dragging) {
+                    carrito.style.left = `${e.clientX - offsetX}px`;
+                    carrito.style.top = `${e.clientY - offsetY}px`;
+                }
+            });
+    
+            document.addEventListener('mouseup', () => {
+                dragging = false;
+            });
+        }
+    });
+</script>
+
+<script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+  data-preference-id="2206552376">
+</script>
+
+
+</html>
